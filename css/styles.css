@@ -1,0 +1,97 @@
+/* PALETTE
+#1B2F33 - Outer Space Crayola
+#ABE188 - Granny Smith Apple
+#28502E - Hunter Green
+#9999A1 - Manatee
+#B7B6C1 - Lavender Gray
+*/
+
+/* GLOBAL STYLES
+---------------------------------- */
+h1, h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: #3D3D3D;
+}
+
+h2 {
+    color: #707070;
+}
+
+h3 {
+    color: #7c7c7c
+}
+
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #B7B6C1;
+    background-color: #1B2F33;
+}
+
+/* IMAGE STYLES
+---------------------------------- */
+img {
+    width: 300px;
+}
+
+/* LINKS
+---------------------------------- */
+/* Link Colour when a:link selector isn't added; a generic link selector */
+a {
+    color: pink;
+}
+/* Default state for links */
+a:link {
+    color: darkblue;
+}
+/* Visited state for links */
+a:visited {
+    color: turquoise;
+}
+/* When the link is being right clicked and it is focused */
+a:focus {
+    color: darkorchid;
+}
+/* When a cursor hovers over the link */
+a:hover {
+    color: red;
+}
+/* While the mouse is clicked and held on the link */
+a:active {
+    color: white; 
+}
+/* PROJECTS
+---------------------------------- */
+.projects {
+    background-color: #1B2C33;
+}
+.projects .btn {
+    color: darkgray;
+    background: rgb(55, 55, 55);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+.projects .btn:hover {
+    color:  rgb(55, 55, 55);
+    background: darkgray;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* WORK EXPERIENCE
+---------------------------------- */
+.work-experience {
+    background-color: #1B2C33;
+}
+
+/* FOOTER
+---------------------------------- */
+footer {
+    background-color: #2e3b40;
+}
+
