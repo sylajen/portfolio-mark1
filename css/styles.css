@@ -4,37 +4,62 @@
 #28502E - Hunter Green
 #9999A1 - Manatee
 #B7B6C1 - Lavender Gray
+Persian Indigo:     #360568
+KSU Purple:         #5b2a86
+Shadow Blue:        #7785ac
+Opal:               #9ac6c5
+Celadon:            #a5e6ba
 */
+
 
 /* GLOBAL STYLES
 ---------------------------------- */
+
 h1, h2, h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
-    color: #3D3D3D;
+    color: #360568;
+    font-size: 69pt;
 }
 
 h2 {
-    color: #707070;
+    color: #360568;
+    margin: 0;
 }
 
 h3 {
-    color: #7c7c7c
+    color: #5b2a86
 }
 
+section {
+    padding: 5px;
+    /* border: 50px #707070 !important; not working for some reason */
+}
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #B7B6C1;
-    background-color: #1B2F33;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #5b2a86;
+    background-color: #7785ac;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrap {
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 /* IMAGE STYLES
 ---------------------------------- */
 img {
     width: 300px;
+    padding: 10px;
+}
+.spacestagram {
+    padding: 20px 20px 20px 10px; /* top right bottom left; clockwise */
 }
 
 /* LINKS
@@ -45,7 +70,7 @@ a {
 }
 /* Default state for links */
 a:link {
-    color: darkblue;
+    color: #360568;
 }
 /* Visited state for links */
 a:visited {
@@ -57,7 +82,7 @@ a:focus {
 }
 /* When a cursor hovers over the link */
 a:hover {
-    color: red;
+    color: #a5e6ba;
 }
 /* While the mouse is clicked and held on the link */
 a:active {
@@ -66,18 +91,19 @@ a:active {
 /* PROJECTS
 ---------------------------------- */
 .projects {
-    background-color: #1B2C33;
+    background-color: #9ac6c5;
 }
 .projects .btn {
-    color: darkgray;
-    background: rgb(55, 55, 55);
+    background: #7785ac;
+    color: #360568;
     text-decoration: none;
     padding: 8px;
     border-radius: 8px;
+    display: inline-block;
 }
 .projects .btn:hover {
-    color:  rgb(55, 55, 55);
-    background: darkgray;
+    background:  #360568;
+    color: #7785ac;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
@@ -86,12 +112,18 @@ a:active {
 /* WORK EXPERIENCE
 ---------------------------------- */
 .work-experience {
-    background-color: #1B2C33;
+    background-color: #7785ac;
+}
+
+/* EDUCATION
+---------------------------------- */
+.education {
+    background-color: #9ac6c5;
 }
 
 /* FOOTER
 ---------------------------------- */
 footer {
-    background-color: #2e3b40;
+    background-color: #7785ac;
 }
 
