@@ -1,9 +1,4 @@
 /* PALETTE
-#1B2F33 - Outer Space Crayola
-#ABE188 - Granny Smith Apple
-#28502E - Hunter Green
-#9999A1 - Manatee
-#B7B6C1 - Lavender Gray
 Persian Indigo:     #360568
 KSU Purple:         #5b2a86
 Shadow Blue:        #7785ac
@@ -14,19 +9,32 @@ Celadon:            #a5e6ba
 
 /* GLOBAL STYLES
 ---------------------------------- */
+/* html & *, *:befpre, *:after should be added to all
+CSS stylesheets to fix box sizing issues */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
-h1, h2, h3 {
+h2, h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
     color: #360568;
-    font-size: 69pt;
+    font-size: 55px;
+    font-family:'Shrikhand', cursive;
+    margin: 0;
+    /* come back to add this with a navbar at the top once you're done learning the course 
+    position: sticky;
+    top: 10px; */
 }
-
 h2 {
     color: #360568;
     margin: 0;
+    font-family: 'Shrikhand', cursive;
 }
 
 h3 {
@@ -61,12 +69,12 @@ img {
 .spacestagram {
     padding: 20px 20px 20px 10px; /* top right bottom left; clockwise */
 }
-
+ 
 /* LINKS
 ---------------------------------- */
 /* Link Colour when a:link selector isn't added; a generic link selector */
 a {
-    color: pink;
+    text-decoration-line: none;
 }
 /* Default state for links */
 a:link {
@@ -74,7 +82,7 @@ a:link {
 }
 /* Visited state for links */
 a:visited {
-    color: turquoise;
+    color: #a5e6ba;
 }
 /* When the link is being right clicked and it is focused */
 a:focus {
@@ -82,11 +90,17 @@ a:focus {
 }
 /* When a cursor hovers over the link */
 a:hover {
-    color: #a5e6ba;
+    color: #e1d3ed;
 }
 /* While the mouse is clicked and held on the link */
 a:active {
     color: white; 
+}
+
+/* PROFILE
+---------------------------------- */
+header {
+    background-color: #7785ac;
 }
 /* PROJECTS
 ---------------------------------- */
@@ -109,6 +123,19 @@ a:active {
     border-radius: 4px;
 }
 
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px solid #5b2a86;
+    padding: 25px 0;
+}
+.project-item img {
+    float: left;
+    margin: 20px;
+}
+.project-item h3 {
+    padding: 0;
+}
+
 /* WORK EXPERIENCE
 ---------------------------------- */
 .work-experience {
@@ -125,5 +152,15 @@ a:active {
 ---------------------------------- */
 footer {
     background-color: #7785ac;
+    text-align: center;
 }
-
+.contact-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
