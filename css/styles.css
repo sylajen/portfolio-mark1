@@ -81,9 +81,9 @@ a:link {
     color: #360568;
 }
 /* Visited state for links */
-a:visited {
+/* a:visited {
     color: #a5e6ba;
-}
+} */
 /* When the link is being right clicked and it is focused */
 a:focus {
     color: darkorchid;
@@ -124,23 +124,33 @@ header {
 }
 
 .project-item {
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     border-bottom: 1px solid #5b2a86;
     padding: 25px 0;
 }
-.project-item img {
+
+/* .project-item img {
     float: left;
     margin: 20px;
 }
 .project-item h3 {
     padding: 0;
-}
+} */
 
 /* WORK EXPERIENCE
 ---------------------------------- */
 .work-experience {
     background-color: #7785ac;
 }
+
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 1px solid #9ac6c5;
+    padding: 25px 0;
+}
+
 
 /* EDUCATION
 ---------------------------------- */
